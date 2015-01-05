@@ -40,7 +40,7 @@ defaults write com.apple.systemuiserver menuExtras -array \
 	"/System/Library/CoreServices/Menu Extras/Battery.menu" \
 	"/System/Library/CoreServices/Menu Extras/Clock.menu"
 
-# Set highlight color to green
+# Set highlight color to graphite
 defaults write NSGlobalDomain AppleHighlightColor -string "0.780400 0.815700 0.858800"
 
 # Set sidebar icon size to medium
@@ -233,10 +233,10 @@ defaults write com.apple.finder QuitMenuItem -bool true
 # Finder: disable window animations and Get Info animations
 defaults write com.apple.finder DisableAllAnimations -bool true
 
-# Set Desktop as the default location for new Finder windows
+# Set Home as the default location for new Finder windows
 # For other paths, use `PfLo` and `file:///full/path/here/`
 defaults write com.apple.finder NewWindowTarget -string "PfDe"
-defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desktop/"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
 
 # Show icons for hard drives, servers, and removable media on the desktop
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
@@ -345,7 +345,7 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 ###############################################################################
 
 # Enable highlight hover effect for the grid view of a stack (Dock)
-defaults write com.apple.dock mouse-over-hilite-stack -bool true
+defaults write com.apple.dock mouse-over-hilite-stack -bool false
 
 # Set the icon size of Dock items to 36 pixels
 defaults write com.apple.dock tilesize -int 36
