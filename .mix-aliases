@@ -8,6 +8,9 @@ alias refresh='source ~/.zshrc; echo "Reloaded .zshrc."'
 alias artisan='php artisan'
 alias oo='open .'
 
+# Fuck (rerun last command with sudo)
+alias fuck='sudo $(history -p \!\!)'
+
 # Add a spacer to the dock
 alias spacedock="defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'; killall Dock"
 
